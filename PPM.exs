@@ -33,9 +33,9 @@ defmodule PPM do
   end
 
   def small(x0, y0, xn) do
-    width = 7680
-    height = 4320
-    depth = 256
+    width = 960
+    height = 540
+    depth = 64
     k = (xn-x0)/width
     image = Mandel.mandelbrot(width, height, x0, y0, k, depth)
     write("small.ppm", image)
